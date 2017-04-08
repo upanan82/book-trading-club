@@ -1,0 +1,234 @@
+@font-face {
+	font-family: 'Roboto';
+  	font-style: normal;
+  	font-weight: 400;
+  	src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  	font-family: 'Roboto';
+  	font-style: normal;
+  	font-weight: 500;
+  	src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 20px 0;
+	color: #727272;
+	text-align: center;
+}
+
+header {
+	color: #00bcd4;
+	height: 56px;
+	margin: 0 0 14px 0;
+	text-align: center;
+}
+
+p { margin: 8px 0 0 0 }
+
+.container p {
+	text-align: center;
+	padding: 0;
+}
+
+.contP {
+	font-size: 19px;
+	font-weight: 300;
+	margin: 0;
+	margin-top: 20px;
+}
+
+
+a {
+	text-decoration: none;
+	color: #00bcd4;
+}
+
+#addName, #addBook { margin-left: 10px }
+
+.list {
+	-webkit-column-count: 7;
+	-webkit-column-fill: auto;
+	-moz-column-count: 7;
+	-moz-column-fill: auto;
+	column-count: 7;
+	column-fill: auto;
+	text-align: center;
+	width: 100%;
+}
+
+.listR {
+	-webkit-column-count: 1;
+	-webkit-column-fill: auto;
+	-moz-column-count: 1;
+	-moz-column-fill: auto;
+	column-count: 1;
+	column-fill: auto;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.container {
+	max-width: 1300px;
+	width: 100%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.containerR {
+	-webkit-column-count: 3;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-fill: auto;
+	column-count: 3;
+	column-fill: auto;
+	max-width: 1300px;
+	width: 100%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.btn:hover {
+	color: #ffa000;
+	border-color: #ffa000;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	border-radius: 4px;
+	float: left;
+	margin-left: 10px;
+}
+
+.title {
+	margin-left: 15px;
+	color: #727272;
+	font-size: 17px;
+	text-align: left !important;
+	float: left;
+}
+
+.text {
+	font-style: italic;
+	font-size: 13px;
+	margin: 5px 0 0 15px;
+	text-align: left !important;
+}
+
+input[type=text], textarea {
+	width: 250px;
+	padding: 8px 15px;
+	border-radius: 3px;
+	outline: none;
+	border: 1px solid rgba(114,114,114,.25);
+	font-size: 14px !important;
+	color: #727272;
+}
+
+header p { margin: 16px 0 5px 0 }
+
+.menu {
+	text-decoration: none;
+	padding: 6px;
+	margin: 0;
+	color: #727272;
+}
+
+.menu:visited { color: #727272 }
+.menu:hover { color: #ffa000 !important }
+.a { text-decoration: underline }
+.a:hover { opacity: .7 }
+.menu:active { color: #ff630d }
+
+header a ~ p {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	color: #eceff1;
+}
+
+#display-name {
+	font-weight: 400;
+	font-size: 21px;
+}
+
+.btn {
+	background: #fff;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 8px 5px;
+	width: 100px;
+	font-weight: 500;
+	cursor: pointer;
+	border: 1px solid rgba(114,114,114,.25);
+	color: rgba(114,114,114,.7);
+}
+
+.btn:focus { outline: none }
+
+.btn:active {
+	transform: scale(0.9, 0.9);
+	-webkit-transform: scale(0.9, 0.9);
+	-moz-transform: scale(0.9, 0.9);
+}
+
+span { font-weight: 500 }
+
+.list-item {
+	display: inline-block;
+	background: #FEFEFE;
+	border: 1px solid rgba(102, 102, 102, 0.3);
+	box-shadow: 2px 2px 5px rgba(102, 102, 102, 0.5);
+	padding: 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	margin: 10px 0;
+	background: #f7f8f9;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.remove, .request, .accept, .refuse {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	opacity: .9;
+	border: 1px solid #d9534f;
+	color: #d9534f;
+	border-radius: 30px;
+	margin-top: -31px;
+	margin-left: -31px;
+	cursor: pointer;
+}
+
+.remove:hover, .request:hover, .accept:hover, .refuse:hover { opacity: .5 }
+
+.request {
+	border: 1px solid #ffa000;
+	color: #ffa000;
+}
+
+.accept {
+	border: 1px solid green;
+	color: green;
+	margin-left: 4px;
+}

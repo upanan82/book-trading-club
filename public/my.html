@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My - Book Trading Club</title>
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="controllers/jquery.js"></script>
+		<script type="text/javascript" src="controllers/post.js"></script>
+	</head>
+	<header>
+		<p style="padding-bottom: 10px;"><span id="display-name"></span></p>
+		<a class="menu" href="/">Home</a>
+		<p>|</p>
+		<a class="menu" style="color: #ffa000;" href="/my">My</a>
+		<p>|</p>
+		<a class="menu" href="/requests">Requests</a>
+		<p>|</p>
+		<a class="menu" href="/settings">Settings</a>
+		<p>|</p>
+		<a class="menu" href="/logout">Logout</a>
+	</header>
+	<body>
+		<div class="container">
+			<form onsubmit="addNew(); return false;">
+				<input placeholder="Add book" type="text" id="book">
+				<input type="button" value="Add" class="btn" id="addBook" onclick="addNew(); return false;">
+			</form><br><br>
+			<div class="list">
+			</div><br>
+			<p>by <a class="a" target='_blank' href="https://github.com/upanan82">upanan82</a></p>
+		</div>
+	</body>
+</html>

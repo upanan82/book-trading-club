@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Settings - Book Trading Club</title>
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="controllers/jquery.js"></script>
+		<script type="text/javascript" src="controllers/post.js"></script>
+	</head>
+	<header>
+		<p style="padding-bottom: 10px;"><span id="display-name"></span></p>
+		<a class="menu" href="/">Home</a>
+		<p>|</p>
+		<a class="menu" href="/my">My</a>
+		<p>|</p>
+		<a class="menu" href="/requests">Requests</a>
+		<p>|</p>
+		<a class="menu" style="color: #ffa000;" href="/settings">Settings</a>
+		<p>|</p>
+		<a class="menu" href="/logout">Logout</a>
+	</header>
+	<body>
+		<div class="container">
+			<form onsubmit="settings(1); return false;">
+				<input placeholder="Full name:" type="text" id="myName">
+				<input type="button" value="Save name" class="btn" id="addName" onclick="settings(1); return false;">
+			</form><br><br>
+			<form onsubmit="settings(2); return false;">
+				<input placeholder="City:" type="text" id="city"><br><br>
+				<input placeholder="State:" type="text" id="state"><br><br>
+				<input type="button" value="Save city" class="btn" id="addCity" onclick="settings(2); return false;">
+			</form><br><br>
+			<p>by <a class="a" target='_blank' href="https://github.com/upanan82">upanan82</a></p>
+		</div>
+	</body>
+</html>
